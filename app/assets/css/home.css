@@ -56,10 +56,20 @@ body {
 /*
  * Header
  */
+.navbar-brand {
+  background-image: url( '/app/assets/images/portfolio-icon-white.png');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  display: block;
+  height: 100px;
+  width: 300px;
+}
+
 .dropdown-menu {
+  min-width: 400px;
   margin-top: 20px;
+  text-align: center;
   background-color: transparent;
-  border: 1px solid #eee;
 }
 
 .dropdown-menu > li > a {

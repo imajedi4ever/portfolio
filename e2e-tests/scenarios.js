@@ -3,40 +3,33 @@
 /* https://github.com/angular/protractor/blob/master/docs/toc.md */
 
 describe('my app', function() {
-
-
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+  it('should automatically redirect to /index when location hash/fragment is empty', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+    expect(browser.getLocationAbsUrl()).toMatch("/index");
+  });
+
+  describe('home', function() {
+    beforeEach(function() {
+      browser.get('index.html#/home');
+    });
+
+    it('should render home when user navigates to /', function() {
+      expect(element.all(by.css('[ng-view]')).first('.lifeHeader').getText()).
+        toMatch(/Life of/);
+    });
   });
 
 
-  describe('view1', function() {
+  describe('paintings', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view1');
+      browser.get('index.html#/paintings');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 1/);
+    it('should render paintings when user navigates to /paintings', function() {
+      expect(element.all(by.css('[ng-view]')).first('h1').getText()).
+        toMatch(/Paintings Article/);
     });
-
-  });
-
-
-  describe('view2', function() {
-
-    beforeEach(function() {
-      browser.get('index.html#/view2');
-    });
-
-
-    it('should render view2 when user navigates to /view2', function() {
-      expect(element.all(by.css('[ng-view] p')).first().getText()).
-        toMatch(/partial for view 2/);
-    });
-
   });
 });
