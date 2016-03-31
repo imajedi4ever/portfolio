@@ -1,0 +1,176 @@
+/*
+ * Globals
+ */
+
+
+/*
+ * Base structure
+ */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #333;
+}
+
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+  background-image: url( '/app/assets/images/home-background.png');
+  background-size: 100% 100%;
+  background-repeat-y: no-repeat;
+}
+
+/*
+ * Home fonts
+*/
+@font-face {
+  font-family: 'Scriptina';
+  src: url('/app/assets/fonts/scriptin-webfont.eot');
+  /* IE9 Compat Modes */
+  src: url('/app/assets/fonts/scriptin-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/app/assets/fonts/scriptin-webfont.woff') format('woff'), /* Modern Browsers */
+  url('/app/assets/fonts/scriptin-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/app/assets/fonts/scriptin-webfont.svg#scriptin-webfont') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Carosello';
+  src: url('/app/assets/fonts/carosello-regular-webfont.eot');
+  /* IE9 Compat Modes */
+  src: url('/app/assets/fonts/carosello-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/app/assets/fonts/carosello-regular-webfont.woff') format('woff'), /* Modern Browsers */
+  url('/app/assets/fonts/carosello-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('/app/assets/fonts/carosello-regular-webfont.svg#carosello-regular-webfont') format('svg');
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+ * Header
+ */
+.dropdown-menu {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid #eee;
+}
+
+.dropdown-menu > li > a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:focus,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav a:focus,
+.navbar-inverse .navbar-nav a:hover {
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.navbar-nav > li >.dropdown-menu {
+  margin-top: 18px;
+}
+
+.open > .dropdown-menu {
+  left: 50%;
+  margin: 15px 0 0 -130px;
+}
+
+/* Links */
+a, a:focus, a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default, .btn-default:hover, .btn-default:focus {
+  color: #fff;
+  /* Prevent inheritence from `body` */
+  background-color: #6FCE2A;
+  border: 1px solid #54BD2B;
+}
+
+/* Extra markup and styles for vertical and horizontal centering */
+.main-wrapper {
+  display: table;
+  width: 100%;
+}
+
+/*
+ * Home article
+ */
+.main-wrapper article {
+  padding: 5% 25px;
+}
+
+.main-wrapper article .btn-lg {
+  padding: 10px 20px;
+}
+
+h1.life {
+  text-indent: -150px;
+}
+
+h1.sculpted {
+  text-indent: 75px;
+  margin: 45px;
+}
+
+h1.ready {
+  margin-top: -12px;
+}
+
+h1.expression {
+  margin-bottom: 50px;
+}
+
+.artistry {
+  font-family: 'Scriptina', sans-serif;
+  font-size: 2em;
+  letter-spacing: .1em;
+}
+
+.experience {
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 1.5em;
+  letter-spacing: .1em;
+}
+
+.expression {
+  font-family: 'Carosello', sans-serif;
+  font-size: 4.4em;
+  letter-spacing: .1em;
+}
+
+/*
+ * Sub articles
+ */
+ .sub-article {
+   padding: 0px;
+ }
+
+.paintings,
+.sketches {
+  height: 20%;
+  background-size: 100% auto;
+  background-repeat-y: no-repeat;
+}
+
+.paintings {
+  background-image: url( '/app/assets/images/sunset-swirl.jpg');
+}
+
+.sketches {
+  background-image: url( '/app/assets/images/test-sketch-dip-pen.jpg');
+}
+
+/*
+ * Footer
+ */

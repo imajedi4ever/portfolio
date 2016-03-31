@@ -1,0 +1,75 @@
+/* app css stylesheet */
+
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.navbar-header {
+  float: left;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin: 40px 0 0 -70px;
+}
+
+.navbar-nav {
+  margin-top: 100px;
+  position: relative;
+  float: none;
+  text-align: center;
+}
+
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .navbar > .container .navbar-brand,
+  .navbar > .container-fluid .navbar-brand {
+    margin-left: -130px;
+  }
+}
